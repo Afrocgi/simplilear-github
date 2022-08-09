@@ -1,0 +1,58 @@
+
+dell@DESKTOP-66EP7DE MINGW64 / (master)
+$ mkdir test
+mkdir: cannot create directory ‘test’: File exists
+
+dell@DESKTOP-66EP7DE MINGW64 / (master)
+$ cd test
+
+dell@DESKTOP-66EP7DE MINGW64 /test (master)
+$ git init
+Initialized empty Git repository in C:/Program Files/Git/test/.git/
+
+dell@DESKTOP-66EP7DE MINGW64 /test (master)
+$ git init
+Reinitialized existing Git repository in C:/Program Files/Git/test/.git/
+
+dell@DESKTOP-66EP7DE MINGW64 /test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.css
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dell@DESKTOP-66EP7DE MINGW64 /test (master)
+$ git add index.html
+
+dell@DESKTOP-66EP7DE MINGW64 /test (master)
+$ git commit -m "comitting an index file"
+[master (root-commit) 1cb4c28] comitting an index file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+
+dell@DESKTOP-66EP7DE MINGW64 /test (master)
+$ git config --global user.username Afrocgi
+
+dell@DESKTOP-66EP7DE MINGW64 /test (master)
+$ git remote add origin https://github.com/Afrocgi/simplilear-github.git
+
+dell@DESKTOP-66EP7DE MINGW64 /test (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Afrocgi/simplilear-github.git
+ * [new branch]      master -> master
+
+dell@DESKTOP-66EP7DE MINGW64 /test (master)
+$
+
+
+
